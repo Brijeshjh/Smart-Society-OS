@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+supabase
+langchain
+crewai
+python-dotenv
+pydantic
+langchain-ollama
+twilio
+sendgrid
+pandas
+openpyxl
+python-multipart
