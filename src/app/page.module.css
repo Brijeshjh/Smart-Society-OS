@@ -1,0 +1,405 @@
+/* Dashboard Layout */
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: #0a0a0f;
+  color: #f8fafc;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Login Screen */
+.loginContainer {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.loginOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(10, 10, 15, 0.65);
+  z-index: 1;
+}
+
+.loginCard {
+  background: #12121a;
+  border: 1px solid #27272a;
+  border-radius: 20px;
+  padding: 48px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  position: relative;
+  z-index: 2;
+}
+
+.loginTitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #6366f1;
+  margin: 0 0 8px 0;
+  text-align: center;
+}
+
+.loginSubtitle {
+  text-align: center;
+  color: #94a3b8;
+  margin: 0 0 32px 0;
+  font-size: 14px;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.loginForm div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.loginForm label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #f8fafc;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.loginForm input,
+.loginForm select {
+  padding: 12px 16px;
+  background: #1a1a24;
+  border: 1px solid #27272a;
+  border-radius: 8px;
+  color: #f8fafc;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.loginForm input::placeholder {
+  color: #64748b;
+}
+
+.loginForm input:focus,
+.loginForm select:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+  background: #202030;
+}
+
+.loginButton {
+  padding: 12px 24px;
+  background: #6366f1;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.loginButton:hover {
+  background: #5558e3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+}
+
+.loginInfo {
+  text-align: center;
+  font-size: 12px;
+  color: #94a3b8;
+  margin: 0;
+  padding-top: 16px;
+  border-top: 1px solid #27272a;
+}
+
+.loginInfo code {
+  background: #1a1a24;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #6366f1;
+  font-weight: 600;
+  font-family: 'Courier New', monospace;
+}
+
+.loginError {
+  color: #ef4444;
+  font-size: 13px;
+  margin: 0;
+  padding: 10px 12px;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 6px;
+  text-align: center;
+}
+
+.carouselDots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+  position: relative;
+  z-index: 3;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(148, 163, 184, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.dot:hover {
+  background: rgba(148, 163, 184, 0.6);
+  transform: scale(1.2);
+}
+
+.activeDot {
+  background: #6366f1;
+  width: 24px;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(99, 102, 241, 0.5);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 280px;
+  background: #12121a;
+  border-right: 1px solid #27272a;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.sidebarHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  font-family: 'Outfit', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #6366f1;
+  margin: 0;
+}
+
+/* Agent Navigation */
+.agentNav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.agentCard {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 12px;
+  background: #1a1a24;
+  border: 1px solid #27272a;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent;
+  color: #f8fafc;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.agentCard:hover {
+  background: #202030;
+  transform: scale(1.02);
+}
+
+.agentCard.active {
+  background: #202030;
+  border-left-color: #6366f1;
+  box-shadow: 0 0 16px rgba(99, 102, 241, 0.3);
+}
+
+.agentIcon {
+  font-size: 24px;
+}
+
+.agentInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.agentInfo h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+.statusDot {
+  width: 6px;
+  height: 6px;
+  background: #10b981;
+  border-radius: 50%;
+}
+
+.agentCard.restricted {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.agentCard.restricted:hover {
+  background: #1a1a24;
+  transform: none;
+}
+
+.restrictedBadge {
+  font-size: 12px;
+  margin-left: auto;
+}
+
+/* User Info Section */
+.userInfo {
+  margin-top: auto;
+  padding-top: 24px;
+  border-top: 1px solid #27272a;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.userDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.userName {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+.userRole {
+  margin: 0;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.logoutButton {
+  padding: 10px 16px;
+  background: #1a1a24;
+  border: 1px solid #27272a;
+  border-radius: 8px;
+  color: #f8fafc;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+}
+
+.logoutButton:hover {
+  background: #202030;
+  border-color: #ef4444;
+  color: #ef4444;
+}
+
+/* Main Content */
+.mainContent {
+  flex: 1;
+  margin-left: 280px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.dashboardOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(10, 10, 15, 0.5);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  border-bottom: 1px solid #27272a;
+  background: #0a0a0f;
+  position: relative;
+  z-index: 2;
+}
+
+.headerLeft h2 {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.headerRight {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.searchBox {
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: #12121a;
+  border: 1px solid #27272a;
+  color: #f8fafc;
+  font-size: 14px;
+  width: 200px;
+}
+
+.searchBox::placeholder {
+  color: #94a3b8;
+}
+
+.contentArea {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+  position: relative;
+  z-index: 2;
+  background: rgba(10, 10, 15, 0.4);
+}
