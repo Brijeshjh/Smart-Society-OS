@@ -1,0 +1,117 @@
+{
+  "financialEntries": [
+    {
+      "id": "76d91600-5671-4f00-8bd3-f9cf91a2661e",
+      "income": 180000,
+      "expense": 320000,
+      "isAnomaly": true,
+      "source": "manual",
+      "uploadedBy": "SeedData",
+      "createdAtMs": 1772434038164
+    },
+    {
+      "id": "cb426c90-4858-4b27-be9b-0beb9d61725f",
+      "income": 250000,
+      "expense": 140000,
+      "isAnomaly": false,
+      "source": "manual",
+      "uploadedBy": "SeedData",
+      "createdAtMs": 1772426838164
+    }
+  ],
+  "complaints": [
+    {
+      "id": "d84ee5bf-c706-4f93-b566-c2250183d294",
+      "residentName": "Neha Singh",
+      "unitNumber": "A-808",
+      "category": "Electrical",
+      "description": "Smoke and spark from meter panel in corridor.",
+      "status": "resolved",
+      "severity": "emergency",
+      "dispatchSummary": "Dispatched Saket (VoltCare Electric).",
+      "createdBy": "Resident",
+      "createdAtMs": 1772439438164
+    },
+    {
+      "id": "a545b1cd-affb-4a56-bbc5-3bd3cd9c32b0",
+      "residentName": "Aman Gupta",
+      "unitNumber": "D-101",
+      "category": "Plumbing",
+      "description": "Water leakage from kitchen pipe.",
+      "status": "pending",
+      "severity": "medium",
+      "createdBy": "Resident",
+      "createdAtMs": 1772435838164
+    }
+  ],
+  "financeAnomalies": [
+    {
+      "id": "02420656-3df3-4d70-a50e-49036c55db29",
+      "category": "Budget",
+      "amount": 320000,
+      "description": "Seed anomaly: expense is >150% of income.",
+      "expenseDate": "2026-03-02T06:47:18.164Z",
+      "detectedAtMs": 1772434038164
+    }
+  ],
+  "visitorLogs": [
+    {
+      "id": "2b2a8d5e-e429-4c84-abdd-28a034f438a9",
+      "visitorName": "Ravi Courier",
+      "visitorType": "Delivery",
+      "hostFlat": "A-302",
+      "contactNumber": "+91-9890010101",
+      "entryTimeIso": "2026-03-01T18:47:18.164Z",
+      "exitTimeIso": null
+    },
+    {
+      "id": "10b7fe26-2c9b-4507-ac37-a699f0ea0264",
+      "visitorName": "Suman Bai",
+      "visitorType": "Maid",
+      "hostFlat": "B-204",
+      "contactNumber": "+91-9890010102",
+      "entryTimeIso": "2026-03-01T23:47:18.164Z",
+      "exitTimeIso": null
+    },
+    {
+      "id": "885e7a2d-9b38-4310-9baa-b08cbe59745d",
+      "visitorName": "Rahul Verma",
+      "visitorType": "Guest",
+      "hostFlat": "C-106",
+      "contactNumber": "+91-9890010103",
+      "entryTimeIso": "2026-03-02T03:47:18.164Z",
+      "exitTimeIso": null
+    }
+  ],
+  "externalServices": [
+    {
+      "id": "ab49e35d-05bc-4743-b03d-5f29326f58c2",
+      "serviceCategory": "Plumbing",
+      "vendorName": "AquaFix Services",
+      "contactPerson": "Mahesh",
+      "phoneNumber": "+91-9890011001",
+      "email": "mahesh@aquafix.local",
+      "isOnCall": true
+    },
+    {
+      "id": "2d0847dc-7519-44b2-bc39-7574688e8ed4",
+      "serviceCategory": "Electrical",
+      "vendorName": "VoltCare Electric",
+      "contactPerson": "Saket",
+      "phoneNumber": "+91-9890011002",
+      "email": "saket@voltcare.local",
+      "isOnCall": true
+    },
+    {
+      "id": "a38b9814-8950-4d40-8875-30a0a5b5a76b",
+      "serviceCategory": "Security",
+      "vendorName": "SecureGrid Response",
+      "contactPerson": "Iqbal",
+      "phoneNumber": "+91-9890011003",
+      "email": "iqbal@securegrid.local",
+      "isOnCall": true
+    }
+  ],
+  "notifications": [],
+  "revision": 1772441300486
+}
