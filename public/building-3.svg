@@ -1,0 +1,30 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGradient3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a3a52;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4a6a8a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="buildingGradient3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a4d5c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d2630;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#skyGradient3)"/>
+  <rect x="500" y="350" width="380" height="650" fill="url(#buildingGradient3)"/>
+  <rect x="1100" y="300" width="420" height="700" fill="url(#buildingGradient3)"/>
+  <rect x="1600" y="400" width="280" height="600" fill="url(#buildingGradient3)"/>
+  <!-- Windows -->
+  <g fill="#ffd700" opacity="0.7">
+    <rect x="530" y="380" width="38" height="38"/><rect x="590" y="380" width="38" height="38"/><rect x="650" y="380" width="38" height="38"/>
+    <rect x="530" y="460" width="38" height="38"/><rect x="590" y="460" width="38" height="38"/><rect x="650" y="460" width="38" height="38"/>
+    <rect x="530" y="540" width="38" height="38"/><rect x="590" y="540" width="38" height="38"/><rect x="650" y="540" width="38" height="38"/>
+    <rect x="530" y="620" width="38" height="38"/><rect x="590" y="620" width="38" height="38"/><rect x="650" y="620" width="38" height="38"/>
+    <rect x="530" y="700" width="38" height="38"/><rect x="590" y="700" width="38" height="38"/><rect x="650" y="700" width="38" height="38"/>
+    <rect x="530" y="780" width="38" height="38"/><rect x="590" y="780" width="38" height="38"/><rect x="650" y="780" width="38" height="38"/>
+    <rect x="1140" y="330" width="42" height="42"/><rect x="1210" y="330" width="42" height="42"/><rect x="1280" y="330" width="42" height="42"/>
+    <rect x="1140" y="420" width="42" height="42"/><rect x="1210" y="420" width="42" height="42"/><rect x="1280" y="420" width="42" height="42"/>
+    <rect x="1140" y="510" width="42" height="42"/><rect x="1210" y="510" width="42" height="42"/><rect x="1280" y="510" width="42" height="42"/>
+  </g>
+  <!-- Ground -->
+  <rect x="0" y="1000" width="1920" height="80" fill="#2d3e2d"/>
+</svg>
